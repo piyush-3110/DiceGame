@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 const Gameplay = ({ number, setNumber, error, setError }) => {
   const [choosenumber, setChoosenumber] = useState(null);
-  const [values, setValues] = useState(2);
+  const [values, setValues] = useState(0);
   const randomgenerate = () => {
     if (choosenumber != null) {
       setNumber(Math.floor(Math.random() * 6) + 1);
@@ -21,7 +21,7 @@ const Gameplay = ({ number, setNumber, error, setError }) => {
     setValues(0);
 
     setisToggle(false);
-    setChoosenumber(0);
+    setChoosenumber(null);
     setError(null);
     setNumber(1);
   };

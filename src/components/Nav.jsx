@@ -17,15 +17,17 @@ const Nav = ({
 
   console.log(number);
   console.log(choosenumber);
+  console.log(values);
   useEffect(() => {
     if (number != null) {
       setError(null);
     }
   }, [choosenumber]);
+  console.log(choosenumber);
   useEffect(() => {
-    if (choosenumber != 0 && number === choosenumber) {
-      setValues((prev) => prev + number);
-    } else if (choosenumber != 0) {
+    if (choosenumber != 0 && choosenumber != null && number === choosenumber) {
+      setValues((prev) => prev + choosenumber);
+    } else if (choosenumber != 0 && choosenumber != null) {
       setValues((prev) => prev - 1);
     }
     setChoosenumber(null);
