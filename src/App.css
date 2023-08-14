@@ -1,0 +1,147 @@
+main{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+main .container{
+  width:1182px;
+  max-height: 522px;
+  display: flex;
+  gap:23px;
+}
+.child1{
+  
+  width:522px;
+}
+.child1 img{
+  height: 400px;
+  
+}
+.child2{
+  display: flex;
+  width:528px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.child2 button{
+  width:6rem;
+  border-radius: 5%;
+  background-color: black;
+  color:white;
+  border:1px solid black;
+  padding:0.5rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+.child2 h1{
+  font-size: 50px;
+
+}
+.child2 button:hover{
+  background-color: white;
+  color:black;
+  transition: 0.3s ease-in-out;
+}
+.right .box{
+  
+ 
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav .left{
+  max-height: 120px;
+  width: 160px;
+ padding-left: 64px;
+ text-align: center;
+}
+.right {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.totalscore{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 40px;
+}
+.totalscore p{
+  font-weight: bold;
+}
+.dice_container{
+ 
+ width: 200px;
+
+ display: flex;
+ flex-direction: column;
+ gap:4px;
+justify-content: center;
+}
+.dice_container .dice img{
+  width: 90%;
+  cursor: pointer;
+}
+.dice_container .dice p{
+  color:red;
+  font-size: 14px;
+}
+.dice_container p{
+  font-size: 23px;
+  margin-left: 4px;
+}
+.dice_container button{
+  padding: 0.5rem 0.5rem;
+  width: 90%;
+  margin-left: 4px;
+}
+.container_container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice_container .white{
+background-color: white;
+font-weight: 500;
+color: black;
+border:1px solid black;
+border-radius: 4%;
+transition: 0.3s ease-in;
+cursor: pointer;
+}
+.dice_container .white:hover{
+  transition: 0.3s background ease-in-out;
+  background-color: black;
+  color:white
+}
+.dice_container .black{
+background-color: black;
+font-weight: 500;
+color: white;
+border:1px solid black;
+border-radius: 4%;
+transition: 0.3s ease-in;
+cursor: pointer;
+}
+.dice_container .black:hover{
+  transition: 0.3s background ease-in-out;
+  background-color: white;
+  color:black;
+}
+.show{
+  position: absolute;
+  height: fit-content;
+  width: 60%;
+  padding: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+}
